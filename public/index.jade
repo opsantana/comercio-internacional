@@ -1,0 +1,16 @@
+include /_components/index
+
+section.airtable-section
+	//- iframe.airtable-embed(src="https://airtable.com/embed/shrh7BHduk2WYcuP2?backgroundColor=purple&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent;")
+	iframe.airtable-embed(src="https://airtable.com/embed/shr6vbfKIrj0ejTWG?backgroundColor=purple&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent;")
+	.absolute.position_table
+		a.absolute.btn--invisible.btn_icon(href="/table")
+			include /assets/table2.svg
+			span Table view
+		a.btn--invisible.btn_icon(href="/form")
+			include /assets/plus.svg
+			span Add contact
+		a.btn--invisible.btn_icon(href="https://airtable.com/tblVEMZNUp3pSTlIS")
+			include /assets/admin.svg
+			span Admin
++footer()

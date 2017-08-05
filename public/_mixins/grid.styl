@@ -1,0 +1,37 @@
+// @import 'jeet'
+
+breakpoints = {
+	xs: 0,
+	sm: 500px,
+	md: 768px,
+	lg: 992px,
+}
+
+
+__container(fluid = false)
+	if(!fluid)
+		center(85%)
+	+above(sm)
+		center(688px)
+		width: 90%
+	+above(md)
+		center(940px)
+		width: 90%
+
+.container
+	__container()
+
+.container-fluid
+	__container(true)
+
+
+// generic grid
+for breakpoint, size in breakpoints
+	+above(breakpoint)
+		for num in (1..12)
+			.g-{breakpoint}-{num}
+				column(num/12, $cycle: 12/num)
+			.gr-{breakpoint}-{num}
+				column(num/12)
+			.gs-{breakpoint}-{num}
+				column(num/12, $gutter: 0, $cycle: 12/num)
