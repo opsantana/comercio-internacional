@@ -14,6 +14,7 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
+    "basic-auth-proxy": "^0.3.2",
     "harp": "^0.24.0",
     "harp-scripts": "0.1.0"
   }

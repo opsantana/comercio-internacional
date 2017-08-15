@@ -1,0 +1,6 @@
+{
+    "username":"admin",
+    "password":"admin",
+    "targetServer":"./table",
+    "proxyPort":8080
+}

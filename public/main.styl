@@ -15,7 +15,6 @@ body, html
 .absolute
 	position absolute
 
-
 .airtable-embed
 	height 100% !important
 	border none
@@ -32,19 +31,16 @@ body, html
 	bottom 90px
 	display block
 
-.position_table
-	top 5px
-	left 190px
-	display none
+.position-center
+	bottom 3px
+	right: 0
+	left: inherit;
+	// display none
+	z-index: 3
 	+above(sm)
-		display inherit
-
-.position_cards
-	top 5px
-	left 384px
-	display none
-	+above(sm)
-		display inherit
+		right: inherit;
+		left 50%
+		transform: translateX(-50%);
 
 .btn_icon
 	svg
