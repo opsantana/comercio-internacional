@@ -5,3 +5,14 @@ mixin footer()
 		.links
 			a.credit(href="https://elogroup.com.br") desenvolvido por
 				span  EloGroup
+
+	.absolute.position-center
+		a.absolute.btn--invisible.btn_icon(href="/table")
+			include /assets/table2.svg
+			span Table view
+		a.btn--invisible.btn_icon(href="/form")
+			include /assets/plus.svg
+			span Add contact
+		a.btn--invisible.btn_icon(href="https://airtable.com/tblVEMZNUp3pSTlIS")
+			include /assets/admin.svg
+			span Admin
