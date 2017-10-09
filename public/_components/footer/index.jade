@@ -1,18 +1,27 @@
 mixin footer()
 	.footer
 		//- .container
-		a(href="/") Contatos Comex <span class="year">| 2017</span>
+		a(href="/") Compradores Internacionais <span class="year">| 2017</span>
 		.links
 			a.credit(href="https://elogroup.com.br") desenvolvido por
 				span  EloGroup
 
 	.absolute.position-center
-		a.absolute.btn--invisible.btn_icon(href="/table")
+		a.btn--invisible.btn_icon(class="#{ current.source == '/' ? 'active' : '' }" href="/")
+			include /assets/home.svg
+			span Home
+		a.btn--invisible.btn_icon(class="#{ current.source == 'cards' ? 'active' : '' }" href="/cards")
+			include /assets/cards2.svg
+			span Cartões
+		a.btn--invisible.btn_icon(class="#{ current.source == 'table' ? 'active' : '' }" href="/table")
 			include /assets/table2.svg
-			span Table view
-		a.btn--invisible.btn_icon(href="/form")
+			span Tabela
+		a.btn--invisible.btn_icon(class="#{ current.source == 'form' ? 'active' : '' }" href="/form")
 			include /assets/plus.svg
-			span Add contact
-		a.btn--invisible.btn_icon(href="https://airtable.com/tblVEMZNUp3pSTlIS")
+			span Adicionar
+		a.btn--invisible.btn_icon(class="#{ current.source == 'rating-form' ? 'active' : '' }" href="/rating-form")
+			include /assets/star.svg
+			span Avaliar
+		a.btn--invisible.btn_icon(class="#{ current.source == '/' ? 'active' : '' }" href="https://airtable.com/tblVEMZNUp3pSTlIS")
 			include /assets/admin.svg
 			span Admin

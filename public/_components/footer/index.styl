@@ -6,9 +6,9 @@
 	width: 100%
 	border-top: 2px solid #dadbdc
 	padding: 0.25rem 1rem 0.5rem
-	+above(sm)
-		padding: 0.25rem 1.5rem 0.5rem
 	+above(md)
+		padding: 0.25rem 1.5rem 0.5rem
+	+above(lg)
 		padding: 0.25rem 2% 0.5rem
 	a
 		text-decoration: none
@@ -20,15 +20,5 @@
 	.year
 		font-weight: normal
 		font-size: 11px
-	.links
-		float: right
-	.credit
-		opacity: 0.3
-		font-weight: 400
-		transition: 0.2s all
-		display: none
-		margin-top: 4px
-		:hover
-			opacity: 1
-		+above(sm)
-			display: block
+.links
+	float: right

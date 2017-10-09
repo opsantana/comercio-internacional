@@ -28,7 +28,7 @@ body, html
 .form-section
 	height 100%
 	height calc(100% - 42px)
-	bottom 90px
+	// bottom 90px
 	display block
 
 .position-center
@@ -37,7 +37,7 @@ body, html
 	left: inherit;
 	// display none
 	z-index: 3
-	+above(sm)
+	+above(md)
 		right: inherit;
 		left 50%
 		transform: translateX(-50%);
@@ -70,8 +70,85 @@ body, html
 	span
 		margin-left 2px
 		display none
-		+above(md)
+		+above(lg)
 			display inherit
 	svg
 		shape-rendering geometricPrecision
 		position relative
+
+.active
+	background-color: dodgerblue
+	color: white
+	:hover
+		background-color: royalblue
+
+.container
+	margin: 0 auto;
+	max-width: 680px
+	width: 90%
+	position: relative;
+	top 56px
+	margin-bottom: 64px
+	background-color: white
+
+h1
+	color #888
+	font-weight 200
+	letter-spacing: 0.3px
+	margin: 0
+	padding 0 24px
+	font-size: 18px
+	line-height: 24px
+	margin-bottom: 48px
+	+above(sm)
+		font-size: 20px
+		line-height: 32px
+	+above(lg)
+		font-size 28px
+		line-height 48px
+
+
+
+.huge-btn
+	position relative
+	display flex
+	text-decoration none
+	color #4d4d4d
+	font-size 20px
+	line-height 32px
+	cursor pointer
+	font-weight 500
+	margin: 24px 0
+	padding 16px 24px
+	align-items: center;
+	transition 0.1s all ease-in
+	border-radius 3px
+	box-sizing border-box
+	align-items center
+	user-select none
+	width: 100%
+	:hover, :focus
+		background-color rgba(0,0,0,0.05)
+	span
+		margin-left 16px
+		// display: block;
+	svg
+		shape-rendering geometricPrecision
+		position relative
+		width: 24px
+		height: auto
+
+.credit
+	color #4d4d4d
+	text-decoration: none;
+	opacity: 0.3
+	font-weight: 400
+	transition: 0.2s all
+	display: none
+	margin-top: 4px
+	span
+		font-weight: 600
+	:hover
+		opacity: 1
+	+above(md)
+		display: block
