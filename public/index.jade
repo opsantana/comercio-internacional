@@ -1,8 +1,14 @@
 include /_components/index
 
 .container
-	h1 Banco de Dados de Compradores Internacionais
-	a.huge-btn(href="https://airtable.com/tblVEMZNUp3pSTlIS" target="_blank")
+	h1 Banco de Compradores Internacionais Rede CIN
+	//- a.huge-btn(href="/")
+		include /assets/home.svg
+		span Home
+	a.huge-btn(href="/cards")
+		include /assets/cards2.svg
+		span Cartões
+	a.huge-btn(href="/table")
 		include /assets/table2.svg
 		span Login no Banco
 	a.huge-btn(href="/form" target="_blank")
