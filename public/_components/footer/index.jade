@@ -10,10 +10,10 @@ mixin footer()
 		a.btn--invisible.btn_icon(class="#{ current.source == '/' ? 'active' : '' }" href="/")
 			include /assets/home.svg
 			span Home
-		a.btn--invisible.btn_icon(class="#{ current.source == 'cards' ? 'active' : '' }" href="/cards")
+		a.btn--invisible.btn_icon(class="#{ current.source == 'cards' ? 'active' : '' }" href="https://airtable.com/tblVEMZNUp3pSTlIS/viwFAWMDo8ccHo1AG" target="_blank")
 			include /assets/cards2.svg
 			span Cartões
-		a.btn--invisible.btn_icon(class="#{ current.source == 'table' ? 'active' : '' }" href="/table")
+		a.btn--invisible.btn_icon(class="#{ current.source == 'table' ? 'active' : '' }" href="https://airtable.com/tblVEMZNUp3pSTlIS/viwBWLcNCAIDCmKkW" target="_blank")
 			include /assets/table2.svg
 			span Tabela
 		a.btn--invisible.btn_icon(class="#{ current.source == 'form' ? 'active' : '' }" href="/form")
@@ -22,6 +22,6 @@ mixin footer()
 		a.btn--invisible.btn_icon(class="#{ current.source == 'rating-form' ? 'active' : '' }" href="/rating-form")
 			include /assets/star.svg
 			span Avaliar
-		a.btn--invisible.btn_icon(class="#{ current.source == '/' ? 'active' : '' }" href="https://airtable.com/tblVEMZNUp3pSTlIS")
+		//- a.btn--invisible.btn_icon(class="#{ current.source == '/' ? 'active' : '' }" href="https://airtable.com/tblVEMZNUp3pSTlIS")
 			include /assets/admin.svg
 			span Admin
