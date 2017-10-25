@@ -1,6 +1,65 @@
 include /_components/index
 
-.container
+script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js")
+
+
+
+nav.navbar.navbar-default
+	div.container-fluid
+		div.navbar-header
+			button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
+				span.sr-only Toggle navigation
+				span.icon-bar
+				span.icon-bar
+				span.icon-bar
+		div.navbar-collapse.collapse#bs-example-navbar-collapse-1(aria-expanded="false" style="height: 1px;")
+			ul.nav.navbar-nav
+				li.active
+					a(href="http://www.intranet.cni.org.br/usuario/login/" target="_blank")
+						img.space(src="http://fidelizacin.cin.org.br/fidelizacin/common/images/img/ico-intranet.png")
+						span.Intranetspan Intranet
+				li
+					a(href="http://www.portaldaindustria.org.br/" target="_blank")
+						img.space(src="http://fidelizacin.cin.org.br/fidelizacin/common/images/img/ico-network.png")
+						span Portal da Indústria
+				li
+					a(href="http://www.portaldaindustria.com.br/agenciacni/" target="_blank")
+						img.space(src="http://fidelizacin.cin.org.br/fidelizacin/common/images/img/ico-doc.png")
+						span Agência CNI
+			ul.nav.navbar-nav.navbar-right
+				li
+					a(href="http://www.portaldaindustria.com.br/cni/" target="_blank")
+						img.space(src="http://fidelizacin.cin.org.br/fidelizacin/common/images/img/logo-cni.png")
+				li
+					a(href="http://www.portaldaindustria.com.br/sesi/" target="_blank")
+						img.space(src="http://fidelizacin.cin.org.br/fidelizacin/common/images/img/logo-sesi.png")
+				li
+					a(href="http://www.portaldaindustria.com.br/senai/" target="_blank")
+						img.space(src="http://fidelizacin.cin.org.br/fidelizacin/common/images/img/logo-senai.png")
+				li
+					a(href="http://www.portaldaindustria.com.br/iel/" target="_blank")
+						img.space(src="http://fidelizacin.cin.org.br/fidelizacin/common/images/img/logo-iel.png")
+
+
+
+
+
+div.bg-left
+	//- img(src="http://fidelizacin.cin.org.br/fidelizacin/common/images/img/bg-vector-left.png")
+
+.logobar
+	.container
+		.right
+			a(href="http://www.cin.org.br/portal/main.jsp")
+					img(src="http://fidelizacin.cin.org.br/fidelizacin/common/images/img/logo-rede-cni-txt.png")
+			a(href="http://www.portaldaindustria.com.br/cni/")
+				img(src="http://fidelizacin.cin.org.br/fidelizacin/common/images/img/logo-cni-text.png")
+
+
+
+
+.container.main
 	h1 Banco de Compradores Internacionais Rede CIN
 	//- a.huge-btn(href="/")
 		include /assets/home.svg

@@ -1,0 +1,432 @@
+/*!
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+html {
+	font-family: sans-serif;
+	text-size-adjust: 100%;
+}
+
+body {
+	margin: 0
+}
+
+nav {
+	display: block
+}
+
+a {
+	background-color: transparent
+}
+
+a:active, a:hover {
+	outline: 0
+}
+
+img {
+	border: 0
+}
+
+button {
+	margin: 0;
+	font: inherit;
+	color: inherit
+}
+
+button {
+	overflow: visible
+}
+
+button {
+	text-transform: none
+}
+
+button {
+	ter;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0
+}
+
+
+
+.navbar-collapse {
+	padding-right: 15px;
+	padding-left: 15px;
+	overflow-x: visible;
+	op: 1px solid transparent;;
+	ow: inset 0 1px 0 rgba(255, 255, 255, .1);
+}
+
+.navbar-collapse.in {
+	overflow-y: auto
+}
+
+@media (min-width:768px) {
+	.navbar-collapse {
+		width: auto;
+		border-top: 0;
+		ow: none;
+	}
+	.navbar-collapse.collapse {
+		display: block!important;
+		height: auto!important;
+		padding-bottom: 0;
+		overflow: visible!important
+	}
+	.navbar-collapse.in {
+		overflow-y: visible
+	}
+	.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse {
+		padding-right: 0;
+		padding-left: 0
+	}
+}
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+	max-height: 340px
+}
+
+@media (max-device-width:480px) and (orientation:landscape) {
+	.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+		max-height: 200px
+	}
+}
+
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+	margin-right: -15px;
+	margin-left: -15px
+}
+
+@media (min-width:768px) {
+	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+		margin-right: 0;
+		margin-left: 0
+	}
+}
+
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0
+}
+
+ul {
+	margin-top: 0;
+	margin-bottom: 10px
+}
+
+.container-fluid {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto
+}
+
+.collapse {
+	display: none
+}
+
+.nav {
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none
+}
+
+.nav>li {
+	position: relative;
+	display: block
+}
+
+.nav>li>a {
+	position: relative;
+	display: block;
+	padding: 10px 15px
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+	text-decoration: none;
+	background-color: #eee
+}
+
+.nav>li>a>img {
+	max-width: none
+}
+
+.navbar {
+	position: relative;
+	min-height: 50px;
+	margin-bottom: 20px;
+	border: 1px solid transparent
+}
+
+@media (min-width:768px) {
+	.navbar {
+		border-radius: 4px
+	}
+}
+
+@media (min-width:768px) {
+	.navbar-header {
+		float: left
+	}
+}
+
+.navbar-collapse {
+	padding-right: 15px;
+	padding-left: 15px;
+	overflow-x: visible;
+	op: 1px solid transparent;;
+	ow: inset 0 1px 0 rgba(255, 255, 255, .1);
+}
+
+@media (min-width:768px) {
+	.navbar-collapse {
+		width: auto;
+		border-top: 0;
+		ow: none;
+	}
+	.navbar-collapse.collapse {
+		display: block!important;
+		height: auto!important;
+		padding-bottom: 0;
+		overflow: visible!important
+	}
+}
+
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header {
+	margin-right: -15px;
+	margin-left: -15px
+}
+
+@media (min-width:768px) {
+	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header {
+		margin-right: 0;
+		margin-left: 0
+	}
+}
+
+.navbar-toggle {
+	position: relative;
+	float: right;
+	padding: 9px 10px;
+	margin-top: 8px;
+	margin-right: 15px;
+	margin-bottom: 8px;
+	background-color: transparent;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px
+}
+
+.navbar-toggle:focus {
+	outline: 0
+}
+
+.navbar-toggle .icon-bar {
+	display: block;
+	width: 22px;
+	height: 2px;
+	border-radius: 1px
+}
+
+.navbar-toggle .icon-bar+.icon-bar {
+	margin-top: 4px
+}
+
+@media (min-width:768px) {
+	.navbar-toggle {
+		display: none
+	}
+}
+
+.navbar-nav {
+	margin: 7.5px -15px
+}
+
+.navbar-nav>li>a {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 20px
+}
+
+@media (min-width:768px) {
+	.navbar-nav {
+		float: left;
+		margin: 0
+	}
+	.navbar-nav>li {
+		float: left
+	}
+	.navbar-nav>li>a {
+		padding-top: 15px;
+		padding-bottom: 15px
+	}
+}
+
+@media (min-width:768px) {
+	.navbar-right {
+		float: right!important;
+		margin-right: -15px
+	}
+}
+
+.navbar-default {
+	background-color: #f8f8f8;
+	border-color: #e7e7e7
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #777
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+	color: #333;
+	background-color: transparent
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	color: #555;
+	background-color: #e7e7e7
+}
+
+.navbar-default .navbar-toggle {
+	border-color: #ddd
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background-color: #ddd
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #888
+}
+
+.navbar-default .navbar-collapse {
+	border-color: #e7e7e7
+}
+
+.container-fluid:after, .container-fluid:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before {
+	display: table;
+	content: " "
+}
+
+.container-fluid:after, .nav:after, .navbar-collapse:after, .navbar-header:after, .navbar:after {
+	clear: both
+}
+
+@-ms-viewport {
+	width: device-width
+}
+
+/*# sourceMappingURL=bootstrap.min.css.map */
+
+/*
+
+Theme Name: Fideliza CIN
+Author: @kadumx AMRDesign
+Version: 1.0
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
+
+html .navbar-default {
+	background-color: #1269BD;
+	border-color: #1269BD;
+}
+
+html .navbar-default .navbar-nav>li>a {
+	color: #A2D0FB;
+	font-family: 'Roboto', sans-serif !important;
+	font-size: 16px !important;
+}
+
+html .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	background-color: #1269BD;
+	color: #fff;
+}
+
+html .navbar {
+	border: 1px solid transparent;
+	margin-bottom: 0px;
+	min-height: 50px;
+	position: relative;
+}
+
+html .navbar-nav {
+	float: left;
+	margin: 0 0 0 25px;
+}
+
+.space {
+	padding-bottom: 5px;
+	padding-right: 5px;
+}
+
+.bg-left {
+	background: url(http://fidelizacin.cin.org.br/fidelizacin/common/images/img/bg-vector-left.png) no-repeat left;
+	width: 520px;
+	height: 545px;
+	position: absolute;
+}
+
+@media screen and (min-width: 320px) and (max-width: 420px) {
+	.bg-left {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 420px) {
+	html .navbar-default .navbar-toggle .icon-bar {
+		background-color: #fff;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 420px) {
+	.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+		background-color: #A2D0FB;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 420px) {
+	.navbar-default .navbar-toggle {
+		border-color: #fff;
+	}
+}
+
+@media screen and (min-width: 435px) and (max-width: 460px) {
+	.bg-left {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 435px) and (max-width: 460px) {
+	html .navbar-default .navbar-toggle .icon-bar {
+		background-color: #fff;
+	}
+}
+
+@media screen and (min-width: 435px) and (max-width: 460px) {
+	.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+		background-color: #A2D0FB;
+	}
+}
+
+@media screen and (min-width: 435px) and (max-width: 460px) {
+	.navbar-default .navbar-toggle {
+		border-color: #fff;
+	}
+}

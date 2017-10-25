@@ -12,6 +12,18 @@ body
 body, html
 	height 100%
 
+.logobar
+	background: #F3F8FC
+	width: 100%
+	height: auto
+	a
+		margin-left: 2rem
+
+		img
+			padding-top 0.25rem
+.right
+	text-align: right;
+
 .absolute
 	position absolute
 
@@ -87,9 +99,19 @@ body, html
 	max-width: 680px
 	width: 90%
 	position: relative;
-	top 56px
-	margin-bottom: 64px
-	background-color: white
+	&.main
+		background-color: white
+		margin-bottom: 64px
+		top 1rem
+		border-radius: 8px
+		padding: 2rem 0
+		+above(md)
+			top: 2rem
+			padding: 2rem 1rem 4rem
+			border: 2px solid #1269BD
+		+above(lg)
+			top: 3rem
+			padding: 2rem 2rem 4rem
 
 h1
 	color #888
